@@ -15,7 +15,7 @@ body {
 }
 
 .edad {
-color: #fff;
+color: blue;
   padding: 12px;
   
   
@@ -31,4 +31,17 @@ color: #fff;
    background-color: antiquewhite;
   height: 20px;
   width: 350px;
+}
+
+@media screen and (max-width: 768px) {
+
+  
+
+.button  {
+   border-radius: 25px;
+   background-color: yellow;
+  height: 20px;
+  /* width: 350px; */
+  font-size: 20px;
+}
 }

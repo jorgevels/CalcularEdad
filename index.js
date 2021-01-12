@@ -13,12 +13,12 @@ function edad(fechaUsuario) {
   d = [year, month, day].join("-");
 
   /*------------*/
-  const hoy = new Date(d); //fecha del sistema con el mismo formato que "fechaUsuario"
-  const cumpleanos = new Date(fechaUsuario);
+  let hoy = new Date(d); //fecha del sistema con el mismo formato que "fechaUsuario"
+  let cumpleanos = new Date(fechaUsuario);
   //alert(cumpleanos+" "+hoy);
   //Calculamos años
-  const edad = hoy.getFullYear() - cumpleanos.getFullYear();
-  const m = hoy.getMonth() - cumpleanos.getMonth();
+  let edad = hoy.getFullYear() - cumpleanos.getFullYear();
+  let m = hoy.getMonth() - cumpleanos.getMonth();
   if (m < 0 || (m === 0 && hoy.getDate() < cumpleanos.getDate())) {
     edad--;
   }
